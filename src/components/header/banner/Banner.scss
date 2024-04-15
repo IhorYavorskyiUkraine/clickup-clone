@@ -1,0 +1,65 @@
+.banner {
+	padding: .6875rem .9375rem;
+	background: #0D1530;
+	&__content {
+		display: flex;
+	}
+
+	&__info {
+		display: flex;
+		margin: 0 auto;
+		gap: 1rem;
+		align-items: center;
+	}
+
+	&__image {
+	}
+
+	&__link {
+		padding: .375rem .625rem;
+		background: linear-gradient(0.00deg, rgb(118, 17, 251),rgb(168, 19, 241) 100%);
+		border-radius: .3125rem;
+		span {
+			text-wrap: nowrap;
+			font-size: .75rem;
+			line-height: .75rem;
+			color: #fff;
+			font-weight: 800;
+		}
+	}
+
+	&__text {
+		color: #fff;
+		font-size: 1rem;
+		text-align: center;
+	}
+	
+	&__close {
+	}
+
+	&__icon {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-items: end;
+		width: 20px;
+		height: 20px;
+		opacity: 1;
+		cursor: pointer;
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 20px;
+			height: 2px;
+			background: #fff;
+		}
+		&::before {
+			transform: rotate(45deg);
+		}
+		&::after {
+			transform: rotate(-45deg);
+		}
+	}
+}
