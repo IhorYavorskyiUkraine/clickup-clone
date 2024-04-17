@@ -8,6 +8,9 @@ import './Banner.scss'
 const Banner = () => {
 
 	const [close, setClose] = useState(false);
+	const header = document.querySelector('.header');
+
+	close ? header.classList.add('top') : null;
 
 	return(
 		<>

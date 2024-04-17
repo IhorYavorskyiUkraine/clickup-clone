@@ -1,31 +1,20 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
+import OutsideClickHandler from 'react-outside-click-handler';
 
-const DropdownItem = ({item, children}) => {
+const DropdownItem = ({item, children, arrow}) => {
 
 	const [active, setActive] = useState(false);
 
-	let menuRef = useRef();
-
-	useEffect(() => {
-
-		let handler = e => {
-			if(!menuRef.current.contains(e.target)) {
-				setActive(false);
-			}
-		}
-
-		document.addEventListener('mousedown', handler);
-
-		return() => {
-			document.removeEventListener('mousedown', handler);
-		}
-	}, [])
-
 	return (
 		<>
-			<li className="menu__item" ref={menuRef}>
-				<button onClick={() => setActive(!active)} className="menu__link">{item}</button>
-				{active ? children : null}
+			<li className="menu__item">
+				<button onClick={() => setActive(!active)} className={`menu__link ${active ? 'active' : ''}`}>
+					<span>{item}</span>
+					{arrow ? <img src={arrow} style={ active ? {transform: 'rotate(180deg)'} : null} alt="arrow" /> : null}
+				</button>
+				<OutsideClickHandler  onOutsideClick={() => setActive(false)}>
+					{active ? children : null}
+				</OutsideClickHandler>
 			</li>
 		</>
 	);

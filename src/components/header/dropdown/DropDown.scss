@@ -1,6 +1,6 @@
 .dropdown {
 	position: absolute;
-	top: 9.5rem;
+	top: 6.5rem;
 	border-radius: 7px;
 	padding: 1rem;
 	background: #fff;
@@ -20,6 +20,7 @@
 		display: flex;
 		align-items: center;
 		padding: 0.5rem;
+		text-wrap: nowrap;
 		img {
 			padding-right: 0.5rem;
 		}
@@ -37,12 +38,16 @@
 	}
 }
 
+.top {
+	top: 0 !important;
+}
+
 .overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.3);
 	z-index: 1000;
 }
