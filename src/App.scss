@@ -116,6 +116,12 @@ h6 {
 	}
 }
 
+.container {
+	max-width: 83.125rem;
+	margin: 0 auto;
+	padding: 0rem .4375rem;
+}
+
 .title {
 	font-family: $second-family;
 	font-weight: 700;
@@ -125,22 +131,16 @@ h6 {
 	
 }
 
-.title-color {
-	color: #fff;
+.title-colored {
 	background: linear-gradient(262deg, #fa12e3 1.83%, #7612fa 53.68%, #12d0fa 100%);
 	background-clip: text;
+	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .text {
 	font-family: $font-family;
 	font-size: .875rem;
-}
-
-.container {
-	max-width: 83.125rem;
-	margin: 0 auto;
-	padding: 0rem .4375rem;
 }
 
 .btn-color {

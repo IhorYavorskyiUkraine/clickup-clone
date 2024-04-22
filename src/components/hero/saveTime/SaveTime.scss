@@ -1,0 +1,26 @@
+$second-family: "Helvetica", sans-serif;
+
+.saveTime {
+	padding: 6rem 0;
+	&__content {
+		max-width: 28.125rem;
+		text-align: center;
+		margin: 0 auto;
+		font-family: $second-family;
+	}
+
+	&__title {
+		max-width: 20rem;
+		font-weight: 700;
+		margin: 0 auto;
+		font-size: 2.9375rem;
+		line-height: 128%;
+		margin-bottom: .625rem;
+	}
+
+	&__text {
+		line-height: 135%;
+		color: #24223e;
+		font-size: 1.25rem;
+	}
+}

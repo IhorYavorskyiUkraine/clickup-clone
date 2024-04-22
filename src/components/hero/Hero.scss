@@ -32,10 +32,7 @@ $second-family: "Helvetica", sans-serif;
 		line-height: 118%;
 		font-family: $second-family;
 		letter-spacing: -0.01em;
-		background: linear-gradient(262deg, #fa12e3 1.83%, #7612fa 53.68%, #12d0fa 100%);
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+	
 		margin-bottom: .875rem;
 	}
 	&__text {
