@@ -56,6 +56,10 @@ $second-family: "Helvetica", sans-serif;
 		background: linear-gradient(13deg, #45c4f9 0%, #7d09ff 50.33%, #ff0be5 100%);
 		transition: all .3s;
 		gap: 2rem;
+		text-wrap: nowrap;
+		@media (max-width: 48.249rem){
+			padding: .9375rem 2.5rem;
+		}
 		&:hover {
 			opacity: .9;
 		}

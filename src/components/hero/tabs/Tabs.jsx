@@ -22,7 +22,7 @@ const SliderTabs = () => {
 
 	return(
 		<>
-		TabsSlider
+		<div className="tabs">TabSlider</div>
 			{/* <section className="slider">
 				<div className="container">
 					<div style={{
